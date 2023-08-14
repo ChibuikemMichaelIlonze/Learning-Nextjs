@@ -13,7 +13,7 @@ function Navbar({ darkMode, setDarkMode }) {
           <li>
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl dark:text-white"
+              className="cursor-pointer text-2xl dark:text-white animate-pulse hover:animate-none"
             />
           </li>
           <Resume />

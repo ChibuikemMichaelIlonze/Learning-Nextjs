@@ -23,7 +23,7 @@ import Scroll from "./scroll";
 
 import Testimonial from "./testimonial";
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>

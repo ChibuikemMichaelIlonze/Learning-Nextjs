@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
   return (
     <li>
-      <a className="button dark:text-white group  rounded-md ml-8 animate-pulse hover:animate-none">
+      <a className="button dark:text-white group  rounded-md ml-8 ">
         <svg>
           <rect
             className="dark:stroke-white group-hover:stroke-green-400"
