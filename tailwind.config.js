@@ -8,9 +8,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        burtons: "burtons",
+      animation: {
+        typing: "typing 5s infinite steps(34)",
       },
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0",
+          },
+          "80%": {
+            width: "34ch",
+          },
+          "100%": {
+            width: "34ch",
+          },
+        },
+      },
+    
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
