@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import Head from "next/head";
 import Lorem50 from "./Lorem50";
+import Profile from "./profile";
 
 import {
   AiFillTwitterCircle,
@@ -36,19 +37,7 @@ export default function Home() {
           <section className=" min-h-screen ">
             <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
-            <div className="text-center p-10 ">
-              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-                Ilonze Chibuikem
-              </h2>
-              <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-                Developer and Designer
-              </h3>
-              <p className="text-medium py-5 leading text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
-                alias officia consectetur aliquam ex sint, voluptatum dicta
-                suscipit nobis in?
-              </p>
-            </div>
+            <Profile />
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
               <AiFillLinkedin />
@@ -63,7 +52,7 @@ export default function Home() {
               <h3 className="text-3xl py-1  dark:text-white ">
                 Services I offer
               </h3>
-              <Lorem50/>
+              <Lorem50 />
             </div>
             <div className="lg:flex gap-10">
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
