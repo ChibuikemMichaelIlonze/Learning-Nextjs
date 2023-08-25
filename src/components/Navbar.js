@@ -1,5 +1,5 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import Resume from "./Resume";
+import Resume from "../pages/Resume";
 
 function Navbar({ darkMode, setDarkMode }) {
   return (
