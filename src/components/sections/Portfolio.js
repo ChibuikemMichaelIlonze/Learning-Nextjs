@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import web1 from "../../public/web1.png";
-import web2 from "../../public/web2.png";
-import web3 from "../../public/web3.png";
-import web4 from "../../public/web4.png";
-import web5 from "../../public/web5.png";
-import web6 from "../../public/web6.png";
+import web1 from "../../../public/web1.png";
+import web2 from "../../../public/web2.png";
+import web3 from "../../../public/web3.png";
+import web4 from "../../../public/web4.png";
+import web5 from "../../../public/web5.png";
+import web6 from "../../../public/web6.png";
 
-import Lorem50 from "@/pages/Lorem50";
+import Lorem50 from "@/components/specific/Lorem50";
 
 const Portfolio = () => {
   return (

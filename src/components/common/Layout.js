@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Footer from "./Footer";
-import HeadComponent from "./HeadComponent";
-import Scroll from "@/pages/scroll";
+import HeadComponent from "../HeadComponent";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Scroll />
       <HeadComponent />
-
       <main>{children}</main>
       <Footer />
     </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Testimonial from "@/pages/testimonial";
-import design from "../../public/design.png";
-import code from "../../public/code.png";
-import consulting from "../../public/design.png";
-import Lorem50 from "@/pages/Lorem50";
+import Testimonial from "@/components/specific/testimonial";
+import design from "../../../public/design.png";
+import code from "../../../public/code.png";
+import consulting from "../../../public/design.png";
+import Lorem50 from "@/components/specific/Lorem50";
 const About = () => {
   return (
     <div>

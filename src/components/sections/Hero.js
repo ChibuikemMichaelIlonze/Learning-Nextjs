@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { variantg, variants } from "./motionVariants";
-import Navbar from "../components/Navbar";
-import Profile from "@/pages/profile";
+import { variantg, variants } from "../specific/motionVariants";
+import Navbar from "../common/Navbar";
+import Profile from "@/components/specific/profile";
 
 import {
   AiFillTwitterCircle,
@@ -10,7 +10,7 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../../public/dev-ed-wave.png";
+import deved from "../../../public/dev-ed-wave.png";
 const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <div>
