@@ -4,11 +4,10 @@ import HeadComponent from "./HeadComponent";
 import Scroll from "@/pages/scroll";
 
 const Layout = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(true);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Scroll />
-      <HeadComponent darkMode={darkMode} setDarkMode={setDarkMode} />
+      <HeadComponent />
 
       <main>{children}</main>
       <Footer />
