@@ -2,12 +2,12 @@ import React from "react";
 import Footer from "./Footer";
 import HeadComponent from "../HeadComponent";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, darkMode, setDarkMode }) => {
   return (
     <div>
       <HeadComponent />
       <main>{children}</main>
-      <Footer />
+      <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 };

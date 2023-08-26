@@ -1,5 +1,5 @@
 import React from "react";
-
+import Typewriter from "typewriter-effect";
 const Profile = () => {
   return (
     <div className="text-center p-10 ">
@@ -7,7 +7,17 @@ const Profile = () => {
         Ilonze Chibuikem
       </h2>
       <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-        Developer and Designer
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString(" Developer and Designer")
+              .pauseFor(3000)
+              .deleteAll()
+              .typeString("I am the best there is.")
+              .pauseFor(3000)
+              .start();
+          }}
+        />
       </h3>
       <p className="text-medium py-5 leading text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas alias
