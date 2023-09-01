@@ -7,7 +7,7 @@ const variants = {
       duration: 1,
     },
   },
-  hover: { scale: 1.2 },
+  hover: { scale: 1.4 },
 };
 const variantg = {
   visible: { opacity: 1, x: 0 },
