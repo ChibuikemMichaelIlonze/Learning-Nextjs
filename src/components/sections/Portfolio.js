@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BsTwitter, BsTwitch } from "react-icons/bs"; // Import the icons
+import { BsTwitter, BsTwitch, BsGithub } from "react-icons/bs"; // Import the icons
 
 import web1 from "../../../public/images/1.png";
 import web2 from "../../../public/images/2.png";
@@ -55,11 +55,7 @@ const Portfolio = ({ darkmode }) => {
   }, []);
 
   return (
-    <div
-      className="min-h-screen pt-24  "
-    
-      id="portfolio"
-    >
+    <div className="min-h-screen pt-24  " id="portfolio">
       <section>
         <div className="text-center mt-10">
           <h3 className="text-3xl pb-5 dark:text-white">Portfolio</h3>
@@ -98,7 +94,7 @@ const Portfolio = ({ darkmode }) => {
                   target="_blank"
                   className="text-teal-600"
                 >
-                  <BsTwitter />
+                  <BsGithub />
                 </a>
                 {item.technologies.map((tech, techIndex) => (
                   <p
