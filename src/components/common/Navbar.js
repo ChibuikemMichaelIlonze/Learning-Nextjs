@@ -19,7 +19,7 @@ function Navbar({ darkMode, setDarkMode }) {
   };
 
   return (
-    <div className={`${darkMode?"bg-black":"bg-gray-500"} mx-auto w-full fixed justify-around px-10 md:px-20 lg:px-40 flex z-50  bg-opacity-90`}>
+    <div className={`${darkMode?"bg-black":"bg-gray-500"} mx-auto w-full fixed justify-around px-10 md:px-20 lg:px-40 flex z-44  bg-opacity-90`}>
       <nav className="  justify-between flex items-center w-full">
         <h1>
           <Image
