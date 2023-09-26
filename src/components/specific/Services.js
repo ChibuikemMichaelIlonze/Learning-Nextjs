@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import code from "../../../public/code.png";
 import consulting from "../../../public/design.png";
-import consulting from "../../../public/design.png";
+
 
 const servicesData = [
   {
