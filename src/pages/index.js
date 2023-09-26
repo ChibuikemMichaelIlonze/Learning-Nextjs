@@ -5,8 +5,7 @@ import { useState } from "react";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
-    <motion.div className={darkMode ? "dark" : ""}>
-    
+    <motion.div className={`${darkMode ? "dark" : ""} w-full overflow-x-hidden`}>
       <Layout darkMode={darkMode} setDarkMode={setDarkMode}>
         <MainComponent darkMode={darkMode} setDarkMode={setDarkMode} />
       </Layout>
