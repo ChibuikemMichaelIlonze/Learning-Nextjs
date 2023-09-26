@@ -14,7 +14,7 @@ const About = ({ darkmode }) => {
           <h3
             className={`${
               darkmode ? "text-white" : "text-black"
-            } text-3xl py-1 `}
+            } text-3xl py-1  mb-10`}
             data-aos="fade-up" // AOS animation effect
             data-aos-duration="1500"
           >

@@ -57,7 +57,7 @@ const Portfolio = ({ darkmode }) => {
   return (
     <div
       className="min-h-screen pt-24  "
-      data-aos-duration="1500"
+    
       id="portfolio"
     >
       <section>
@@ -72,6 +72,7 @@ const Portfolio = ({ darkmode }) => {
                 index % 2 === 0 ? "aos-init aos-animate" : ""
               }`}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              data-aos-duration="1500"
             >
               <a href={item.link} target="_blank">
                 <div className="relative mx-auto bg-gradient-to-b from-teal-500  w-full h-96 overflow-hidden rounded-xl">

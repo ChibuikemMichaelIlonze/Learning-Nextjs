@@ -16,8 +16,7 @@ const Hero = ({ darkMode, setDarkMode }) => {
     <div>
       {" "}
       <section className=" h-screen relative " id="home">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-
+       
         <motion.div
           variants={variants}
           initial="hidden"

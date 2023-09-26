@@ -17,7 +17,14 @@ const Profile = () => {
           <span className="inline-block">
             {" "}
             <TypeAnimation
-              sequence={["Frontend Developer", 1000, " Designer", 1000]}
+              sequence={[
+                "Frontend Developer",
+                1000,
+                " Designer",
+                1000,
+                "soon to be FullStack developer",
+                1000,
+              ]}
               speed={200}
               repeat={Infinity}
             />

@@ -19,8 +19,8 @@ function Navbar({ darkMode, setDarkMode }) {
   };
 
   return (
-    <div className="mx-auto w-[75%] fixed justify-between flex z-50">
-      <nav className="py-5 mb-5 justify-between flex items-center w-full">
+    <div className="mx-auto w-full fixed justify-around px-10 md:px-20 lg:px-40 flex z-50 bg-black bg-opacity-90">
+      <nav className="  justify-between flex items-center w-full">
         <h1>
           <Image
             src={darkMode ? logoWhite : logoBlack}
