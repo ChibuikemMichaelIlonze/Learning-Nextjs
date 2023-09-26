@@ -23,8 +23,7 @@ function Navbar({ darkMode, setDarkMode }) {
       <nav className="  justify-between flex items-center w-full">
         <h1>
           <Image
-            src={darkMode ? logoWhite : logoBlack}
-            width={100}
+G            width={100}
             height={100}
           />
         </h1>
