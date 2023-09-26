@@ -1,23 +1,52 @@
-import React from "react";
-import Image from "next/image";
+import React, { useEffect } from "react";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS CSS
 
-import Lorem50 from "@/components/specific/Lorem50";
-import deved from "../../../public/dev-ed-wave.png";
-import { motion } from "framer-motion";
-import Services from "../specific/Services";
-const About = () => {
+
+const About = ({ darkmode }) => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []); // Empty dependency array to run it once
+
   return (
-    <div>
-      {" "}
+    <div className="my-24 min-h-screen">
       <section>
-        <motion.div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mb-10 overflow-hidden md:h-96 md:w-96">
-          <Image src={deved} layout="fill" objectFit="cover" />
-        </motion.div>
-        <div className="text-center ">
-          <h3 className="text-3xl py-1  dark:text-white ">Services I offer</h3>
-          <Lorem50 />
+        <div className="text-center  flex flex-col gap-5 mb-20">
+          <h3 className={`${darkmode?"text-white":"text-black"} text-3xl py-1 `}>About</h3>
+          <p
+            className={`${
+              darkmode ? "text-gray-300" : "text-gray-950"
+            } text-lg md:text-lg leading-10 flex flex-col gap-4`}
+          >
+            <span
+              data-aos="fade-up" // AOS animation effect
+              data-aos-duration="1000" // Animation duration in milliseconds
+            >
+              Hello! My name is Ilonze Chibuikem, and I'm a student at the
+              University of Nigeria, Nsukka, studying electronic engineering.
+            </span>
+            <span data-aos="fade-up" // AOS animation effect
+              data-aos-duration="1500">
+
+            My experience in the engineering field has given me strong
+            problem-solving abilities and a keen understanding of the potential
+            of technology. I have a wide range of interests outside of the
+            classroom that keep me active and imaginative. I love football, and
+            when I'm not playing, you can find me engrossed in the realm of
+            coding, where I'm particularly skilled at creating user-friendly
+            websites. 
+            </span>
+            
+            <span data-aos="slide-up" // AOS animation effect
+              data-aos-duration="2000">
+            I firmly believe in the power of creativity and simplicity
+            as a frontend developer. Every website I create has the chance to be
+            innovative and useful. Delivering websites that are both simple to
+            use and visually appealing is something I'm proud of.
+            </span>
+          </p>
         </div>
-        <Services />
+ 
       </section>
     </div>
   );
