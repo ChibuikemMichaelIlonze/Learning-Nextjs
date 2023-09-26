@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
-    <div className="flex items-end gap-5 md:gap-10 flex-col-reverse md:flex-row">
+    <div className="flex items-end gap-5 md:gap-10 flex-col-reverse md:flex-row pt-40 ">
       {" "}
       <div className="text-center md:text-left pb-10">
         <h2 className="text-6xl py-2 text-teal-600 font-medium md:text-6xl">

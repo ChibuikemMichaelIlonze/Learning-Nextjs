@@ -15,15 +15,8 @@ const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <div>
       {" "}
-      <section className=" h-screen relative ">
-        <motion.div
-          variants={variantg}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 3 }}
-        >
-          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        </motion.div>
+      <section className=" h-screen relative " id="home">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
         <motion.div
           variants={variants}
@@ -42,8 +35,14 @@ const Hero = ({ darkMode, setDarkMode }) => {
             <AiFillYoutube />
           </motion.div> */}
         </motion.div>
-        <div className="absolute bottom-0 left-0"> 
-          <BsArrowDown  height={100} width={100} className={`${darkMode?"fill-white":"fill-black"} animate-bounce `} />
+        <div className="absolute bottom-0 left-0">
+          <BsArrowDown
+            height={100}
+            width={100}
+            className={`${
+              darkMode ? "fill-white" : "fill-black"
+            } animate-bounce `}
+          />
         </div>
       </section>
     </div>

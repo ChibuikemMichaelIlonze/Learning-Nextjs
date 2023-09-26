@@ -9,7 +9,7 @@ const About = ({ darkmode }) => {
   }, []); // Empty dependency array to run it once
 
   return (
-    <div className="my-24 min-h-screen">
+    <div className="pt-24 min-h-screen " id="about">
       <section>
         <div className="text-center  flex flex-col gap-5 mb-20">
           <h3 className={`${darkmode?"text-white":"text-black"} text-3xl py-1 `}>About</h3>

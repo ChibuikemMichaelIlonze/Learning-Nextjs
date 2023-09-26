@@ -55,10 +55,10 @@ const Portfolio = ({ darkmode }) => {
   }, []);
 
   return (
-    <div className="min-h-screen py-10 " data-aos-duration="1500">
+    <div className="min-h-screen pt-24  " data-aos-duration="1500" id="portfolio">
       <section>
         <div className="text-center mt-10">
-          <h3 className="text-3xl py-5 dark:text-white">Portfolio</h3>
+          <h3 className="text-3xl pb-5 dark:text-white">Portfolio</h3>
         </div>
         <div className="flex flex-col gap-10 py-10 md:flex-row md:flex-wrap">
           {portfolioItems.map((item, index) => (

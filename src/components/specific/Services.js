@@ -31,7 +31,7 @@ const servicesData = [
 
 const Services = ({ darkmode }) => {
   return (
-    <div className={`${darkmode ? "text-black" : "text-gray-300"}`}>
+    <div className={`${darkmode ? "text-black" : "text-gray-300"} pt-24` } id="skills">
       <h3 className={`${darkmode ? "text-white" : "text-black"} text-3xl py-1 flex justify-center items-center`}>
         Skills
       </h3>
