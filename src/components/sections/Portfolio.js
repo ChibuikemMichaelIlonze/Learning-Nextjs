@@ -99,7 +99,7 @@ const Portfolio = ({ darkmode }) => {
                   target="_blank"
                   className="text-teal-600"
                 >
-                  <BsTwitter /> GitHub
+                  <BsTwitter /> 
                 </a>
                 {item.technologies.map((tech, techIndex) => (
                   <p
