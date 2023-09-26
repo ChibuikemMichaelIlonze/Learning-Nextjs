@@ -39,6 +39,8 @@ const Services = ({ darkmode }) => {
         className={`${
           darkmode ? "text-white" : "text-black"
         } text-3xl py-1 flex justify-center items-center`}
+        data-aos-duration="1000"
+        data-aos="fade-down"
       >
         Skills
       </h3>

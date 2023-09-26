@@ -15,7 +15,7 @@ const About = ({ darkmode }) => {
             className={`${
               darkmode ? "text-white" : "text-black"
             } text-3xl py-1  mb-10`}
-            data-aos="fade-up" // AOS animation effect
+            data-aos="fade-down" // AOS animation effect
             data-aos-duration="1500"
           >
             About
