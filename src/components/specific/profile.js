@@ -24,7 +24,7 @@ const Profile = () => {
           </span>
         </h3>
       </div>{" "}
-      <motion.div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96">
+      <motion.div className="relative  bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96">
         <Image src={okay} layout="fill" objectFit="cover" />
       </motion.div>
     </div>

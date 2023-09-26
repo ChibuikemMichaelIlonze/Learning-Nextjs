@@ -55,12 +55,16 @@ const Portfolio = ({ darkmode }) => {
   }, []);
 
   return (
-    <div className="min-h-screen pt-24  " data-aos-duration="1500" id="portfolio">
+    <div
+      className="min-h-screen pt-24  "
+      data-aos-duration="1500"
+      id="portfolio"
+    >
       <section>
         <div className="text-center mt-10">
           <h3 className="text-3xl pb-5 dark:text-white">Portfolio</h3>
         </div>
-        <div className="flex flex-col gap-10 py-10 md:flex-row md:flex-wrap">
+        <div className="flex flex-col gap-10 py-14 md:flex-row md:flex-wrap">
           {portfolioItems.map((item, index) => (
             <div
               key={index}
@@ -70,36 +74,30 @@ const Portfolio = ({ darkmode }) => {
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
               <a href={item.link} target="_blank">
-                <Image
-                  src={item.imageSrc}
-                  className={`rounded-lg object-cover border-2 border-opacity-60 p-3 ${
-                    darkmode ? "border-gray-400 " : "border-black"
-                  }`}
-                  width={300}
-                  height={300}
-                  layout="responsive"
-                />
+                <div className="relative mx-auto bg-gradient-to-b from-teal-500  w-full h-96 overflow-hidden rounded-xl">
+                  <Image src={item.imageSrc} layout="fill" objectFit="cover" />
+                </div>
               </a>
               <p
                 className={`${
                   darkmode
                     ? "text-gray-200 border-gray-400"
                     : "text-black border-black "
-                } rounded-lg border-2`}
+                } rounded-lg border-2 text-center md:text-left p-2`}
               >
                 {item.description}
               </p>
               <div
                 className={`${
                   darkmode ? "text-white" : "text-black"
-                } flex gap-2 m-1`}
+                } flex gap-2 m-1 flex-wrap items-center justify-center `}
               >
                 <a
                   href={item.linkgit}
                   target="_blank"
                   className="text-teal-600"
                 >
-                  <BsTwitter /> 
+                  <BsTwitter />
                 </a>
                 {item.technologies.map((tech, techIndex) => (
                   <p

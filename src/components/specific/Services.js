@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import code from "../../../public/code.png";
-import consulting from "../../../public/design.png";
-
+import code from "../../../public/images/frontend.svg";
+import consulting from "../../../public/images/node1.svg";
+import database from "../../../public/images/database1.svg";
 
 const servicesData = [
   {
     title: "Frontend Development",
-    image: consulting,
+    image: code,
     description:
       "I specialize in creating user-friendly websites that are both visually appealing and functional. I have expertise in HTML, CSS, and JavaScript, and I'm skilled in various frontend libraries and frameworks.",
     tools: ["HTML", "CSS", "JavaScript", "React"],
@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     title: "Database Management",
-    image: code,
+    image: database,
     description:
       "I have hands-on experience with MongoDB, a robust NoSQL database, which allows for efficient data storage and retrieval. My skills in database management help ensure seamless interactions between the frontend and backend, resulting in responsive and dynamic web applications.",
     tools: ["MongoDB"],
@@ -31,8 +31,15 @@ const servicesData = [
 
 const Services = ({ darkmode }) => {
   return (
-    <div className={`${darkmode ? "text-black" : "text-gray-300"} pt-24` } id="skills">
-      <h3 className={`${darkmode ? "text-white" : "text-black"} text-3xl py-1 flex justify-center items-center`}>
+    <div
+      className={`${darkmode ? "text-black" : "text-gray-300"} pt-24`}
+      id="skills"
+    >
+      <h3
+        className={`${
+          darkmode ? "text-white" : "text-black"
+        } text-3xl py-1 flex justify-center items-center`}
+      >
         Skills
       </h3>
       <div className="lg:flex gap-10">
@@ -45,7 +52,12 @@ const Services = ({ darkmode }) => {
             data-aos="fade-up" // Set AOS effect to "fade-up" for all services
             data-aos-duration="1500" // Set AOS duration to 1500 milliseconds (1.5 seconds)
           >
-            <Image src={service.image} width={100} height={100} className="mx-auto" />
+            <Image
+              src={service.image}
+              width={100}
+              height={100}
+              className="mx-auto"
+            />
             <h3 className="text-lg font-medium pt-8 pb-2">{service.title}</h3>
             <p>{service.description}</p>
             <div>
