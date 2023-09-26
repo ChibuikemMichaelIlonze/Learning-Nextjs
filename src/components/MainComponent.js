@@ -7,6 +7,7 @@ import Scroll from "./common/scroll";
 import Services from "./specific/Services";
 import Link from "next/link";
 import Navbar from "./common/Navbar";
+import Footer from "./common/Footer";
 
 const MainComponent = ({ darkMode, setDarkMode }) => {
   return (
@@ -24,6 +25,7 @@ const MainComponent = ({ darkMode, setDarkMode }) => {
           <About darkmode={darkMode} />
           <Services darkmode={darkMode} />
           <Portfolio darkmode={darkMode} />
+          <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </main>
     </div>

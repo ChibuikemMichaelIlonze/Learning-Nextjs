@@ -22,7 +22,7 @@ const Profile = () => {
                 1000,
                 " Designer",
                 1000,
-                "soon to be FullStack developer",
+                "Backend developer",
                 1000,
               ]}
               speed={200}
